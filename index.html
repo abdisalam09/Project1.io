@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav class="top">
+      <div class="logo">
+        <h1>ABDISALAM ELECTRONIC</h1>
+         <!-- <img src="IMAGES/logo-removebg-preview.png"  color="red" alt="" width="200" > -->
+      </div>
+      <ul class="nav-link">
+        <li class="active">HOME</li>
+        <li>SERVICES</li>
+        <li><href="#">ABOUT</li>
+        <li><a href="#" class="ctn">CONTACT</a></li>
+      </ul>
+      <img src="IMAGES/menu-btn.png" class="menu-btn" alt="">
+    </nav>
+    <!-- HEADER -->
+    <header>
+      <div class="header-content">
+        <h2>Abdisalam Electronics</h2>
+        <div class="line"></div>
+        <h1>A WONDERFUL GIFT</h1>
+        <a href="#" class="ctn">Learn more</a>
+      </div>
+    </header>
+
+
+    <!-- EVENTS -->
+
+    <section class="electronics">
+      <div class="title">
+        <h1>Electronic Items</h1>
+        <div class="line"></div>
+      </div>
+
+
+      <div class="row">
+
+        <div class="col">
+          <img src="IMAGES/Watch1.jpg" id="img1" alt="" width="400">
+          <h4>Best Camera</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="ctn" id="dis">99% Off</a>
+        </div>
+        <div class="col">
+          <img src="IMAGES/Watch2.jpg" alt="" width="400">
+          <h4>Best Camera</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="ctn" id="dis">99% Off</a>
+        </div>
+        <div class="col">
+          <img src="IMAGES/Watch3.jpg" alt="" width="400">
+          <h4>Best Camera</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="ctn" id="dis">99% Off</a>
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+
+    <footer class="hoos">
+
+      
+      <div class="two">
+        <h3>NEWSLETTER SIGN UP</h3>
+        <P>Sign up to our newsletter and get exclusive offers and news you wont find anywhere else straight to your inbox!</P>
+        <input class="inp" type="text" placeholder="Enter Your Email"> <br>
+       
+       
+       </div>
+      <div class="two">
+        <h3>NEWSLETTER SIGN UP</h3>
+        <P>Sign up to our newsletter and get exclusive offers and news you wont find anywhere else straight to your inbox!</P>
+        <input class="inp" type="text" placeholder="Enter Your Email"> <br>
+       
+       
+       </div>
+    </footer>
+
+    <script>
+      const  menuBtn = document.querySelector(".menu-btn")
+      const  navlinks  = document.querySelector(".nav-link")
+      
+      menuBtn.addEventListener("click",()=>{
+        navlinks.classList.toggle('mobile-menu');
+      })
+    </script>
+  </body>
+</html>

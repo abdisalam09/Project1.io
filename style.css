@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: whie;
+}
+/* NAVBAR */
+.active{
+    font-weight: bold;
+    color: #fc036b;
+    text-decoration: underline;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.top{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color:rgb(255, 255, 127);
+}
+.top ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+ ul li{
+    margin: 0px 30px;
+}
+.hoos{
+    background-color: #484872;
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+/* .hoos .one p{
+  font-size: 28px;
+    margin: 20px;
+} */
+.hoos .one li{
+    list-style: none;
+}
+.hoos .o{
+    margin-bottom: 20px;
+}
+
+.hoos .two{
+    width: 40%;
+}
+.hoos h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hoos p{
+    margin-bottom: 20px;
+}
+.hoos .inp{
+    margin-bottom: 20px;
+    padding: 10px ;
+    width: 100%;
+}
+button{
+    background-color: #62daf1;
+    padding: 10px 30px ;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+/* HEADER */
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('IMAGES/bilding1.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    color: rgb(255, 255, 127);
+    margin-bottom: 190px;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 10vmin;
+}
+.header-content h1{
+    font-size: 5vmin;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.ctn{
+    background-color: #fc036b;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+
+
+
+
+/* EVENTS */
+section{
+    width:100%;
+    margin: 80px auto;
+}
+.electronics{
+    width: 100%;
+
+}
+.title{
+    font-size: 4vmin;
+    color: #49497e;
+    text-align: center;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.row .col img{
+    margin: auto 0.5px;
+}
+.col h4{
+    margin: 10px auto;
+    font-size: 28px;
+    font-weight: bold;
+}
+.col p {
+    margin: 20px auto;
+}
+
+
+@media screen and (max-width:850px) {
+    /* .hoos{
+        flex-direction: column;
+    } */
+    .row{
+        flex-direction: column;
+    }
+        .row .col img {
+            margin: auto 0.5px;
+        }
+    .top h1{
+        color: rgb(255, 255, 127);
+    }
+    .top{
+        padding: 0;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+    .logo{
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        color: rgb(211, 201, 201);
+        cursor: pointer;
+    }
+    ul{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #484872;
+        margin-top: -900px;
+    }
+    ul li{
+        margin: 30px auto;
+    }
+        .mobile-menu{
+            margin-top: 0px;
+            border-bottom-right-radius: 30%;
+        }
+}
